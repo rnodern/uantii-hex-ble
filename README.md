@@ -1,6 +1,12 @@
-# UanTii Hex Lamp BLE for Home Assistant
+# MELK-OA21 Bluetooth lights for Home Assistant
 
-Control the Magic Lantern UanTii hex panels locally using Home Assistant Bluetooth. The commands were captured from a six-panel lamp advertising as `MELK-OA21`. Other controller variants may use a different protocol.
+Control compatible `MELK-OA21` RGB lights locally using Home Assistant Bluetooth. This integration was developed and tested on the six-panel UanTii hex light using Magic Lantern.
+
+## Compatibility
+
+The `MELK-OA21` Bluetooth name also appears on other products, including RGB strips. Setup looks for `MELK-OA21` with an optional two-digit hex suffix, then checks for the readable and writable `FFF3` characteristic and a controller identifier.
+
+The [DuoCo StripX integration](https://github.com/tgmstudios/duoco-stripx-ha#protocol-9-byte-frames-characteristic-0000fff3-0000-1000-8000-00805f9b34fb) documents the same command formats for RGB, brightness, effects, speed and power off on a different `MELK-OA21` unit. Its power-on command differs (`01` where the UanTii capture uses `F0`). Whether both commands work on both units is untested. Full compatibility with other `MELK-OA21` products is unverified.
 
 ## Install
 
