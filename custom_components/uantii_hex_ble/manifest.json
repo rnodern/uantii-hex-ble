@@ -1,0 +1,12 @@
+{
+  "domain": "uantii_hex_ble",
+  "name": "UanTii Hex Lamp BLE",
+  "codeowners": ["@rnodern"],
+  "config_flow": true,
+  "dependencies": ["bluetooth", "bluetooth_adapters"],
+  "documentation": "https://contributors.home-assistant.io/core/integrations/bluetooth/",
+  "integration_type": "device",
+  "iot_class": "assumed_state",
+  "requirements": ["bleak-retry-connector>=3.12.0"],
+  "version": "0.3.0"
+}

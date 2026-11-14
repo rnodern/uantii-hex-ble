@@ -1,0 +1,30 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Add UanTii Hex Lamp",
+        "description": "Choose the powered lamp. Close Magic Lantern so Home Assistant can connect. Home Assistant shows the last settings it sent.",
+        "data": {"address": "Bluetooth lamp"}
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not verify the lamp. Close Magic Lantern and check that the lamp is powered and within Bluetooth range."
+    },
+    "abort": {
+      "already_configured": "This lamp is already configured.",
+      "no_devices_found": "No unconfigured MELK-OA21 lamps were found. Power the lamp, close Magic Lantern and try again."
+    }
+  },
+  "entity": {
+    "button": {
+      "mode_plus": {"name": "Mode +"},
+      "mode_minus": {"name": "Mode −"}
+    },
+    "sensor": {
+      "mode_number": {"name": "Mode number"}
+    },
+    "number": {
+      "effect_speed": {"name": "Effect speed"}
+    }
+  }
+}
